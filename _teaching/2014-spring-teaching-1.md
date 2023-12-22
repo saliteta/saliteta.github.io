@@ -1,20 +1,20 @@
 ---
-title: "Teaching experience 1"
+title: "Teaching Assistant in Multimedia System"
 collection: teaching
 type: "Undergraduate course"
-permalink: /teaching/2014-spring-teaching-1
-venue: "University 1, Department"
-date: 2014-01-01
-location: "City, Country"
+permalink: https://www4.comp.polyu.edu.hk/~csdzhang/CSC3185/Course%20Outline.pdf
+venue: "The Chinese University of Hong Kong, Shenzhen, School of Science and Engineering"
+date: 2023-9-1
+location: "Shenzhen, China"
 ---
 
 This is a description of a teaching experience. You can use markdown like any other post.
 
-Heading 1
-======
+Tutorial
+Holding Tutorial session for 12 weeks
 
-Heading 2
-======
 
-Heading 3
+Office Hour
 ======
+Holding office hours for midterm and fina
+
