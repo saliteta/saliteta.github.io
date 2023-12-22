@@ -82,9 +82,8 @@ analytics:
 author:
   name             : "Butian Xiong"
   avatar           : "profile.jpg"
-  bio              : "RA in CUHK-SZ DeepBit"
-  location         : "Zhixin 204B, Long Xiang Blvd. 2001,Shenzhen"
-  employer         : "https://mypage.cuhk.edu.cn/academics/lizhen/"
+  bio              : "RA in CUHK-SZ [DeepBit](https://mypage.cuhk.edu.cn/academics/lizhen/) "
+  location         : "Shenzhen, China"
   #pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   #googlescholar    : "http://yourfullgooglescholarurl.com"
   email            : "xiongbutian768@gmail.com"
