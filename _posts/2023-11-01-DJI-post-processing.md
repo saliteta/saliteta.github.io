@@ -1,7 +1,7 @@
 ---
 title: 'DJI Drone Flying Tips'
 permalink: /posts/DJI_post_processing
-date: 2023-09-01
+date: 2023-12-22
 tags:
   - DJI Drones 
   - Lidar Scanning

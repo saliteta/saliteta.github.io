@@ -1,7 +1,7 @@
 ---
 title: 'Paper Reading Notes'
 permalink: /posts/paper_reading
-date: 2013-04-26
+date: 2013-12-22
 collection: posts
 tags:
   - Neural Field

@@ -11,49 +11,52 @@ redirect_from:
 
 Education
 ======
-* B.S. in GitHub, GitHub University, 2012
-* M.S. in Jekyll, GitHub University, 2014
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
+* B.S. in CUHK-SZ, the Chinese University of Hong Kong, Shenzhen 2024 (expected)
+* Exchange in KAIST, Korea Advanced Institute of Science & Technology, 2023 Spring
+
 
 Work experience
 ======
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
+* Fall 2023 - Present: Research Assistant
+  * Chinese University of Hong Kong, Shenzhen, DeepBit Lab
+  * Duties included: 3D Lidar Scanning for Large Scene Reconstruction, and 3D Gaussian Splatting
+  * Supervisor: Professor Zhen Li
 
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
-  
-Skills
-======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* Summer 2023: Research Assistant
+  * Korea Advanced Institute of Science & Technology, Geometry AI Lab
+  * Duties included: Implemented 3D point cloud denoising algorithms using diffusion and transformer architecture.
 
-Publications
-======
-  <ul>{% for post in site.publications %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
+  * Supervisor: Professor Minhyuk Sung
+
+* Fall 2022: Research Assitant
+  * Chinese University of Hong Kong, Shenzhen, RAILS Lab
+  * Duties included: Out of Distribution Detection and Scene Understanding and Segmentation, Implemented prototype entropy-based algorithm for logits post-processing, achieved at least SOTA performance.
+  * Supervisor: Professor Tin Lun Lam
+
+* Summer 2022: Research Assitant
+  * Shenzhen Research Institute of Big Data
+  * Duties included: Responsible for transforming the generated point cloud into a 3D digital face using Blender platform, which was realized offline.
+  * Supervisor: Professor Li Liu
   
-Talks
+
+Awards and Honors
 ======
-  <ul>{% for post in site.talks %}
-    {% include archive-single-talk-cv.html %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+* Undergraduate Research Award, CUHK-SZ 2023
+* Ranking at 6/103 in Computer Engineering in the School of Science and Engineering in CUHK-SZ with a CGPA of 3.655/4 & MGPA of 3.81/4
+* Dean’s list 2020-2021 School of Science and Engineering (Chinese University of Hong Kong, Shenzhen), Dean’s list 2021- 2022 School of Science and Engineering (Chinese University of Hong Kong, Shenzhen), Dean’s list 2022-2023 School of Science and Engineering (Chinese University of Hong Kong, Shenzhen)
+* Academic Performance Award 2021-2022 (Chinese University of Hong Kong, Shenzhen).
+* H Prize in 2022 Mathematical Contest in Modeling (the US contest)
+* Third Prize in the 2021 Mathematical Contest in Modeling (China contest)
+
+Sevices
+=======
+* Reviwer of ICASSP 2024
+* Backstage Manager of ICMC 2024
+
+
+Additional Information and Projects
+========
+* Language Skills: Mandarin (Native), English (Fluent), Japanese (Intermediate), Korean, (Intermediate). Programming Skills: Python
+* Pytorch, Flask, TensorFlow, Java, C++, HTML, SQL, Svelte, C, Verilog Operating System and Platforms: Linux User, Windows Fluent User. 
+* Microsoft 365, Adobe Premier, Adobe Acrobat, Keil v4, Fluent User, Blender 3D Designer 
+* Hobbies: Violin, Chinese University of Hong Kong (Shenzhen) Orchestra; Kendo, KAIST Kendo club.  

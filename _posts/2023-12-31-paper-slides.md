@@ -1,6 +1,6 @@
 ---
 title: '2023 Paper Slides'
-date: 2023-01-01
+date: 2023-12-22
 permalink: /posts/2023_paper_slides
 tags:
   - Gaussian Splatting and Byond
