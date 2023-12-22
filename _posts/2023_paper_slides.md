@@ -1,11 +1,13 @@
 ---
 title: '2023 Paper Slides'
 date: 2023-01-01
+permalink: /posts/2023_paper_slides
 tags:
   - Gaussian Splatting and Byond
 ---
 
-This post is the summarize of my 2023 paper introduction slides
+2023 Paper Slides
+=====
 
 - [Gaussian Splatting and Beyond](https://docs.google.com/presentation/d/1DZ5bkIquXO0_aXnCjgaENHX7vf-eVQWw0yll9mnsOzQ/edit?usp=sharing)
 - [RayDF](https://docs.google.com/presentation/d/1QLM3OghnPHfgmMKpG8_7VUybIwXalN3_eIZ4dtbpZkI/edit?usp=sharing)

@@ -3,7 +3,7 @@ title: "Teaching Assistant in Multimedia System"
 collection: teaching
 type: "Undergraduate course"
 venue: "The Chinese University of Hong Kong, Shenzhen, School of Science and Engineering"
-date: 2023-9-1
+date: 2023-09-01
 location: "Shenzhen, China"
 ---
 
