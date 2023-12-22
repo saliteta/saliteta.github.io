@@ -82,9 +82,9 @@ analytics:
 author:
   name             : "Butian Xiong"
   avatar           : "profile.jpg"
-  bio              : "I am currently an undergraduate student work in the DeepBit lab in the Chinese University of Hong Kong(Shenzhen), I am interested in large scale scene reconstructionr"
-  location         : "Zhixin 204B, Long Xiang Blvd. 2001, Shenzhen, Guangdong, China"
-  employer         : "Research Assistant in DeepBit CUHK-SZ"
+  bio              : "RA in CUHK-SZ DeepBit"
+  location         : "Zhixin 204B, Long Xiang Blvd. 2001,Shenzhen"
+  employer         : "https://mypage.cuhk.edu.cn/academics/lizhen/"
   #pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   #googlescholar    : "http://yourfullgooglescholarurl.com"
   email            : "xiongbutian768@gmail.com"
@@ -109,7 +109,7 @@ author:
   stackoverflow    : # http://stackoverflow.com/users/123456/username
   steam            :
   tumblr           :
-  twitter          : "replacethistwitterhandle"
+  twitter          : "@saliteta"
   vine             :
   weibo            :
   xing             :
