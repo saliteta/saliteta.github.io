@@ -1,16 +1,17 @@
 ---
 title: 'DJI Drone Flying Tips'
 permalink: /posts/DJI_post_processing
-date: 2023-12-22
+date: 2023-11-01
 tags:
   - DJI Drones 
   - Lidar Scanning
-  - Gaussian Splatting
+  - Drone Assemby
 ---
-
-We introduce a novel large-scale scene reconstruction benchmark using the newly developed 3D representation approach, Gaussian Splatting, on our expansive U-Scene dataset. U-Scene encompasses over one and a half square kilometres, featuring a comprehensive RGB dataset coupled with LiDAR ground truth. For data acquisition, we employed the Matrix 300 drone equipped with the high-accuracy Zenmuse L1 LiDAR, enabling precise rooftop data collection. This dataset, developed under the auspices of the Chinese University of Hong Kong and Shenzhen MSUBIT University, offers a unique blend of urban and academic environments for advanced spatial analysis. Our evaluation of U-Scene with Gaussian Splatting includes a detailed analysis across various novel viewpoints. We also juxtapose these results with those derived from our accurate point cloud dataset, highlighting significant differences that underscore the importance and innovation of our work.
+This blog introduces how to assemble DJI-Matrix 300 with Zenmuse L1 lidar and make it work.
 
 ======
 
-- [U-Scene Project Page](https://saliteta.github.io/CUHKSZ_SMBU/)
+- [DJI Drone Assembly](https://lacy-backbone-098.notion.site/Drone-Assembly-864cdca6917e46cea145e0026f9096c5?pvs=4)
+- [Drone Operation Tips](https://lacy-backbone-098.notion.site/DJI-Drone-Operation-Tips-616a6f91481245e69997e89c6a5ba012?pvs=4)
+  
 
