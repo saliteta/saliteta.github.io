@@ -6,7 +6,7 @@ excerpt: 'We introduce a novel large-scale scene reconstruction benchmark using 
 date: 2024-01-27
 venue: 'arXiv'
 paperurl: 'https://arxiv.org/abs/2401.14032'
-citation: Xiong, Butian, et al. "GauU-Scene: A Scene Reconstruction Benchmark on Large Scale 3D Reconstruction Dataset Using Gaussian Splatting" arXiv preprint arXiv:2401.14032 (2024).
+citation: Xiong, Butian, et al. "A Scene Reconstruction Benchmark on Large Scale 3D Reconstruction Dataset Using Gaussian Splatting" arXiv preprint arXiv:2401.14032 (2024).
 ---
 Image classification plays a pivotal role across diverse applications, yet challenges persist when models are deployed in real-world scenarios. Notably, these models falter in detecting unfamiliar classes that were not incorporated during classifier training, a formidable hurdle for safe and effective real-world model deployment, commonly known as out-of-distribution (OOD) detection. While existing techniques, like max logits, aim to leverage logits for OOD identification, they often disregard the intricate interclass relationships that underlie effective detection. This paper presents an innovative class relevance learning method tailored for OOD detection. Our method establishes a comprehensive class relevance learning framework, strategically harnessing interclass relationships within the OOD pipeline. This framework significantly augments OOD detection capabilities. Extensive experimentation on diverse datasets, encompassing generic image classification datasets (Near OOD and Far OOD datasets), demonstrates the superiority of our method over state-of-the-art alternatives for OOD detection.
 
