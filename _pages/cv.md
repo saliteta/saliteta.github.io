@@ -41,6 +41,7 @@ Work experience
 
 Awards and Honors
 ======
+* Undergraduate Research Award, CUHK-SZ 2024
 * Undergraduate Research Award, CUHK-SZ 2023
 * Ranking at 6/103 in Computer Engineering in the School of Science and Engineering in CUHK-SZ with a CGPA of 3.655/4 & MGPA of 3.81/4
 * Dean’s list 2020-2021 School of Science and Engineering (Chinese University of Hong Kong, Shenzhen), Dean’s list 2021- 2022 School of Science and Engineering (Chinese University of Hong Kong, Shenzhen), Dean’s list 2022-2023 School of Science and Engineering (Chinese University of Hong Kong, Shenzhen)
@@ -50,6 +51,7 @@ Awards and Honors
 
 Sevices
 =======
+* Reviwer of ACM MM 2024
 * Reviwer of ICASSP 2024
 * Backstage Manager of ICMC 2024
 
