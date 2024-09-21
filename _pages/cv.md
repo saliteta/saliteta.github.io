@@ -9,15 +9,14 @@ redirect_from:
 
 {% include base_path %}
 
-Education
+Research experience
 ======
-* B.S. in CUHK-SZ, the Chinese University of Hong Kong, Shenzhen 2024 (expected)
-* Exchange in KAIST, Korea Advanced Institute of Science & Technology, 2023 Spring
 
+* Spring 2024 - Present: Engineer and Research Scientist 
+  * Future Network Intelligence Institute
+  * Duties included: Indoor Scene Reconstuction, Semantic Embedding, Mutiview Consistant Semantic Segmentation, Emboddiment Dataset Collection
 
-Work experience
-======
-* Fall 2023 - Present: Research Assistant
+* Fall 2023 - Spring 2024: Research Assistant
   * Chinese University of Hong Kong, Shenzhen, DeepBit Lab
   * Duties included: 3D Lidar Scanning for Large Scene Reconstruction, and 3D Gaussian Splatting
   * Supervisor: Professor Zhen Li
@@ -37,23 +36,22 @@ Work experience
   * Shenzhen Research Institute of Big Data
   * Duties included: Responsible for transforming the generated point cloud into a 3D digital face using Blender platform, which was realized offline.
   * Supervisor: Professor Li Liu
-  
 
-Awards and Honors
+Education
 ======
-* Undergraduate Research Award, CUHK-SZ 2024
-* Undergraduate Research Award, CUHK-SZ 2023
-* Ranking at 6/103 in Computer Engineering in the School of Science and Engineering in CUHK-SZ with a CGPA of 3.655/4 & MGPA of 3.81/4
-* Dean’s list 2020-2021 School of Science and Engineering (Chinese University of Hong Kong, Shenzhen), Dean’s list 2021- 2022 School of Science and Engineering (Chinese University of Hong Kong, Shenzhen), Dean’s list 2022-2023 School of Science and Engineering (Chinese University of Hong Kong, Shenzhen)
-* Academic Performance Award 2021-2022 (Chinese University of Hong Kong, Shenzhen).
-* H Prize in 2022 Mathematical Contest in Modeling (the US contest)
-* Third Prize in the 2021 Mathematical Contest in Modeling (China contest)
+* B.S. in CUHK-SZ, the Chinese University of Hong Kong, Shenzhen 2024 
+* Exchange in KAIST, Korea Advanced Institute of Science & Technology, 2023 Spring
 
-Sevices
+Awards Academic Award 
+======
+* Undergraduate Research Award, CUHK-SZ 2024, CUHK-SZ 2023
+* Ranking at 6/103 in Computer Engineering in the School of Science and Engineering in CUHK-SZ with a CGPA of 3.655/4 & MGPA of 3.81/4
+* Dean’s list 2020-2021, 2021-2022, 2022-2023, 2023-2024 School of Science and Engineering (Chinese University of Hong Kong, Shenzhen)
+
+Reviwer
 =======
-* Reviwer of ACM MM 2024
-* Reviwer of ICASSP 2024
-* Backstage Manager of ICMC 2024
+* TVCST 2024
+* Reviwer of ICASSP 2024, 2025
 
 
 Additional Information and Projects

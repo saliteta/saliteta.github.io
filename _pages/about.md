@@ -8,20 +8,29 @@ redirect_from:
   - /about.html
 ---
 
-My name is Butian Xiong. I am now working as a research assistant at CUHK-SZ(Chinese University of Hong Kong, Shenzhen) Deep Bit Lab guided by Professor [Zhen Li](https://mypage.cuhk.edu.cn/academics/lizhen/) on 3D representation. And I served as a team leader in DJI point cloud scanning project. Previous to that I worked in KAIST(Korea Advanced Institute & Tech) Geometry AI Lab guided by professor [Minhyuk](https://mhsung.github.io/). Before I joined as an intern at KAIST, I was under the supervision of Professor [Tin Lun Lam](https://sites.google.com/site/lamtinlun) and worked with Doctor [Liguang](https://sites.google.com/view/zhouliguang/home) and to deal with out-of-distribution problems at Robotics and Artificial Intelligence Lab(RAIL) at CUHK-SZ. I was supervised by Professor [Liu Li](https://liliu-avril.github.io/) in SRIBD (Shenzhen Research Institute of Big Data) to deal with the 3D digital human generation problem. I have also had some experiences in robotics including drones and unmanned sailing boats.
+My name is Butian Xiong. Currently, I am an AI engineer working at the Shenzhen Future Network Intelligence Institute and a research scientist at Infused AI. I also serve as a technical consultant at [Auki-Labs](https://www.aukilabs.com/), where I work closely with [Yatong Han](https://scholar.google.com.hk/citations?user=qO7xbbgAAAAJ). Previously, I worked as a research assistant at CUHK-SZ (Chinese University of Hong Kong, Shenzhen) in the Deep Bit Lab under the guidance of Professor [Zhen Li](https://mypage.cuhk.edu.cn/academics/lizhen/) on 3D representation. I also led a team in a point cloud scanning project at DJI. Prior to that, I worked at KAIST (Korea Advanced Institute of Science & Technology) in the Geometry AI Lab, guided by Professor [Minhyuk Sung](https://mhsung.github.io/). Before my internship at KAIST, I was supervised by Professor [Tin Lun Lam](https://sites.google.com/site/lamtinlun) and worked with Dr. [Liguang Zhou](https://sites.google.com/view/zhouliguang/home) on out-of-distribution problems at the Robotics and Artificial Intelligence Lab (RAIL) at CUHK-SZ. Additionally, I was supervised by Professor [Liu Li](https://liliu-avril.github.io/) at SRIBD (Shenzhen Research Institute of Big Data), where I worked on 3D digital human generation.
 
 
 
-Honors and Academic Performance
+
+Service
 ======
-- Undergraduate Research Award in CUHK-SZ
-- Ranking at 6/103 in Computer Engineering in the School of Science and Engineering in CUHK-SZ with a CGPA of 3.655/4 & MGPA of 3.81/4
-- Dean’s list 2020-2021 School of Science and Engineering (Chinese University of Hong Kong, Shenzhen), Dean’s list 2021- 2022 School of Science and Engineering (Chinese University of Hong Kong, Shenzhen), Dean’s list 2022-2023 School of Science and Engineering (Chinese University of Hong Kong, Shenzhen)
-  
-- Academic Performance Award 2021-2022 (Chinese University of Hong Kong, Shenzhen).
-- H Prize in 2022 Mathematical Contest in Modeling (the US contest)
-- Third Prize in the 2021 Mathematical Contest in Modeling (China contest)
+- Served as reviewer in TCSVT 2024
+- Served as reviewer of ICASSP 2024, and 2025
+- Served as Teaching Assistant, in Database System, Multimedia System, Introduction to Artificial Intellegience
 
+Academic Performance
+======
+- First Class Honor Graduation
+- Undergraduate Research Award in CUHK-SZ, 2023, 2024
+- Dean’s list 2020-2021, 2021-2022, 2022-2023, 2023-2024 in the School of Science and Engineering in CUHK-SZ
+- Academic Performance Award 2021-2022 (Chinese University of Hong Kong, Shenzhen).
+
+Infused AI and DeepBit Lab
+======
+Currently, I and Dr. [Xiao Yu](https://scholar.google.com/citations?user=piMObnAAAAAJ&hl=en) are runing 3D scene understanding research team in Infused AI and DeepBit Lab, if one wants to join our research, please feel free to drop me and Xiaoyu an email.
+Current researcher including the following:
+- Research Assistant: Jiayue Dai, Yunya Wang, Yuetong Chen, Yihan Fang
 
 ## Hobbies
 - I really love playing the violin. I played it for over ten years.
