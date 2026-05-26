@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Butian Xiong | Research Assistant | USC ICT</title>
+  <meta name="description" content="Butian Xiong is a Master's student in Computer Science at USC and Research Assistant at USC Institute for Creative Technologies, working on 3D Gaussian Splatting, large-scale scene reconstruction, and semantic 3D understanding.">
+  <meta name="author" content="Butian Xiong">
+  <meta name="keywords" content="Butian Xiong, 3D Gaussian Splatting, scene reconstruction, USC, ICT, computer vision, NeRF, LiDAR">
+  <meta name="google-site-verification" content="tg5NqTT3Uotaijob4JFV8nuSFJW6xGEELF-MOaU0x8k">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Butian Xiong">
+  <meta property="og:description" content="MSCS @ USC · Research Assistant @ USC ICT · 3D Gaussian Splatting & Scene Reconstruction">
+  <meta property="og:image" content="https://saliteta.github.io/images/profile.jpg">
+  <meta property="og:url" content="https://saliteta.github.io">
+  <meta property="og:type" content="website">
+
+  <!-- Bootstrap 3 -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+  <!-- Academicons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+
+  <style>
+    /* ===== Base ===== */
+    body {
+      font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      color: #2B333F;
+      font-size: 1rem;
+      line-height: 1.65;
+      background: #fff;
+    }
+
+    .container { max-width: 920px; }
+
+    a { color: #0077aa; text-decoration: none; }
+    a:hover { color: #0e132b; text-decoration: underline; }
+
+    p { margin-bottom: 0.75rem; }
+
+    /* ===== Headings ===== */
+    h1 { font-size: 2.4rem; font-weight: 500; margin-top: 0; margin-bottom: 0.2rem; }
+
+    h3.section-title {
+      font-size: 1.35rem;
+      font-weight: 500;
+      text-align: center;
+      border-bottom: 1px solid #CCCCCC;
+      padding-bottom: 0.45rem;
+      margin-top: 2.2rem;
+      margin-bottom: 1.4rem;
+      letter-spacing: 0.02em;
+    }
+
+    /* ===== Profile ===== */
+    .profile-section { padding: 2.5rem 0 1rem; }
+
+    .profile-photo {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      object-fit: cover;
+      display: block;
+      margin: 0 auto 1rem;
+      border: 3px solid #eee;
+    }
+
+    .profile-name { font-size: 1.9rem; font-weight: 500; margin-bottom: 0.15rem; }
+
+    .profile-title {
+      font-size: 0.95rem;
+      color: #555;
+      margin-bottom: 0.05rem;
+    }
+
+    /* ===== Action Buttons ===== */
+    .btn-actions { margin-top: 1rem; }
+
+    .button--sacnite {
+      display: inline-block;
+      margin: 0.2rem 0.1rem;
+      padding: 0.38rem 0.7rem;
+      font-size: 0.82rem;
+      border: 1px solid #333;
+      background: #333;
+      color: #fff !important;
+      border-radius: 4px;
+      transition: background 0.18s, color 0.18s;
+      white-space: nowrap;
+    }
+
+    .button--sacnite:hover {
+      background: #fff;
+      color: #333 !important;
+      text-decoration: none;
+    }
+
+    /* ===== Publications ===== */
+    .pub-row {
+      display: flex;
+      gap: 1.4rem;
+      margin-bottom: 1.6rem;
+      align-items: flex-start;
+    }
+
+    .pub-thumb {
+      flex: 0 0 170px;
+      width: 170px;
+    }
+
+    .pub-thumb img {
+      width: 100%;
+      border-radius: 5px;
+      border: 1px solid #e8e8e8;
+      display: block;
+    }
+
+    .pub-thumb .thumb-placeholder {
+      width: 100%;
+      height: 100px;
+      border-radius: 5px;
+      border: 1px solid #e8e8e8;
+      background: linear-gradient(135deg, #f0f4f8 0%, #e2eaf2 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.75rem;
+      font-weight: 500;
+      color: #888;
+      text-align: center;
+      padding: 0.5rem;
+    }
+
+    .pub-content { flex: 1; min-width: 0; }
+
+    .pub-title {
+      font-weight: 500;
+      font-size: 0.97rem;
+      margin-bottom: 0.25rem;
+      line-height: 1.4;
+    }
+
+    .pub-authors {
+      font-size: 0.88rem;
+      color: #555;
+      margin-bottom: 0.2rem;
+    }
+
+    .pub-authors strong { color: #2B333F; font-weight: 500; }
+
+    .pub-venue { font-size: 0.88rem; margin-bottom: 0.4rem; }
+
+    .venue-tag {
+      display: inline-block;
+      background: #e8f4f8;
+      color: #0077aa;
+      padding: 0.08rem 0.45rem;
+      border-radius: 3px;
+      font-weight: 500;
+      font-size: 0.82rem;
+    }
+
+    .venue-tag.conf { background: #e8f4e8; color: #2a7a2a; }
+    .venue-tag.preprint { background: #f8f0e8; color: #a06010; }
+    .venue-tag.journal { background: #f0e8f8; color: #6a2a9a; }
+
+    .pub-desc {
+      font-size: 0.875rem;
+      color: #555;
+      margin-bottom: 0.4rem;
+      line-height: 1.5;
+    }
+
+    .pub-links a {
+      font-size: 0.82rem;
+      margin-right: 0.6rem;
+      color: #0077aa;
+    }
+
+    .pub-links a:hover { color: #0e132b; }
+
+    /* ===== Experience ===== */
+    .exp-row { margin-bottom: 1.3rem; }
+
+    .exp-row h4 {
+      font-size: 0.97rem;
+      font-weight: 500;
+      margin: 0 0 0.15rem;
+    }
+
+    .exp-row .exp-meta {
+      font-size: 0.875rem;
+      color: #666;
+      margin-bottom: 0.15rem;
+    }
+
+    .exp-row .exp-desc {
+      font-size: 0.875rem;
+      color: #555;
+      margin: 0;
+    }
+
+    /* ===== Education ===== */
+    .edu-row {
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .edu-date {
+      flex: 0 0 100px;
+      font-size: 0.85rem;
+      color: #777;
+      padding-top: 0.15rem;
+    }
+
+    .edu-details h4 {
+      font-size: 0.97rem;
+      font-weight: 500;
+      margin: 0 0 0.1rem;
+    }
+
+    .edu-details p {
+      font-size: 0.875rem;
+      color: #555;
+      margin: 0;
+    }
+
+    /* ===== Lists ===== */
+    ul.clean-list {
+      padding-left: 1.3rem;
+      font-size: 0.93rem;
+    }
+
+    ul.clean-list li { margin-bottom: 0.3rem; }
+
+    /* ===== Footer ===== */
+    footer {
+      text-align: center;
+      padding: 2rem 0 1.5rem;
+      font-size: 0.83rem;
+      color: #999;
+      border-top: 1px solid #eee;
+      margin-top: 2.5rem;
+    }
+
+    /* ===== Dark mode ===== */
+    body.dark {
+      background: #1a1b2e;
+      color: #dde1ea;
+    }
+
+    body.dark a { color: #5abcd8; }
+    body.dark a:hover { color: #a8d8ea; }
+
+    body.dark .button--sacnite {
+      background: #dde1ea;
+      color: #1a1b2e !important;
+      border-color: #dde1ea;
+    }
+
+    body.dark .button--sacnite:hover {
+      background: #1a1b2e;
+      color: #dde1ea !important;
+    }
+
+    body.dark h3.section-title { border-color: #3a3d52; }
+    body.dark .profile-photo { border-color: #3a3d52; }
+    body.dark .profile-title { color: #99a0b0; }
+    body.dark .pub-authors { color: #99a0b0; }
+    body.dark .pub-desc { color: #99a0b0; }
+    body.dark .pub-thumb img { border-color: #3a3d52; }
+    body.dark .pub-thumb .thumb-placeholder { background: linear-gradient(135deg, #252638, #2e3148); border-color: #3a3d52; color: #666; }
+    body.dark .venue-tag { background: #1e3a4a; color: #5abcd8; }
+    body.dark .venue-tag.conf { background: #1e3a1e; color: #5abd5a; }
+    body.dark .venue-tag.preprint { background: #3a2e1e; color: #c8901a; }
+    body.dark .venue-tag.journal { background: #2e1e3a; color: #b05ad8; }
+    body.dark .exp-meta { color: #888; }
+    body.dark .exp-desc { color: #99a0b0; }
+    body.dark .edu-date { color: #888; }
+    body.dark .edu-details p { color: #99a0b0; }
+    body.dark footer { border-color: #2e3148; color: #555; }
+
+    /* ===== Responsive ===== */
+    @media (max-width: 768px) {
+      .pub-row { flex-direction: column; }
+      .pub-thumb { width: 100%; max-width: 240px; flex: none; }
+      h1 { font-size: 1.8rem; }
+      .profile-photo { width: 160px; height: 160px; }
+      .edu-row { flex-direction: column; gap: 0.2rem; }
+      .edu-date { flex: none; }
+    }
+
+    /* ===== Print ===== */
+    @media print {
+      .button--sacnite { display: none !important; }
+      h3.section-title { color: #900; border-color: #900; }
+      .pub-thumb { display: none; }
+      footer { display: none; }
+    }
+  </style>
+</head>
+
+<body>
+<div class="container">
+
+  <!-- ===== PROFILE ===== -->
+  <div class="profile-section row">
+    <div class="col-sm-3 text-center">
+      <img src="images/profile.jpg" alt="Butian Xiong" class="profile-photo">
+      <div class="profile-name">Butian Xiong</div>
+      <div class="profile-title">MSCS · USC Viterbi</div>
+      <div class="profile-title">Research Assistant · USC ICT</div>
+
+      <div class="btn-actions">
+        <a href="files/CV.pdf" class="button--sacnite">
+          <i class="ai ai-cv"></i>&nbsp;CV
+        </a>
+        <a href="https://github.com/saliteta" class="button--sacnite">
+          <i class="fab fa-github"></i>&nbsp;GitHub
+        </a>
+        <a href="https://scholar.google.com/citations?user=iuY1-IgAAAAJ&hl=en" class="button--sacnite">
+          <i class="ai ai-google-scholar"></i>&nbsp;Scholar
+        </a>
+        <a href="mailto:xiongbutian768@gmail.com" class="button--sacnite">
+          <i class="fas fa-envelope"></i>&nbsp;Email
+        </a>
+        <a href="https://twitter.com/saliteta" class="button--sacnite">
+          <i class="fab fa-twitter"></i>&nbsp;Twitter
+        </a>
+      </div>
+    </div>
+
+    <div class="col-sm-9">
+      <h3 class="section-title" style="text-align:left; border:none; margin-top:0.6rem; padding-bottom:0;">About Me</h3>
+      <p>
+        I am a Master's student in Computer Science at the
+        <a href="https://www.usc.edu/">University of Southern California</a>
+        (Viterbi School of Engineering) and a Research Assistant at
+        <a href="https://ict.usc.edu/">USC Institute for Creative Technologies</a>,
+        supervised by <a href="https://ict.usc.edu/about-us/leadership/research-leadership/andrew-feng/">Andrew Feng</a>.
+      </p>
+      <p>
+        My research focuses on <strong>3D scene understanding</strong> — including large-scale
+        <strong>3D Gaussian Splatting</strong>, semantic-aware 3D reconstruction, indoor navigation,
+        and multimodal LiDAR–image fusion. I am passionate about building 3D perception systems
+        that can reason about the real world at scale.
+      </p>
+      <p>
+        I am also currently interning at <a href="https://www.futurewei.com/">Futurewei Technologies</a>
+        (Huawei's US R&amp;D arm), working on cutting-edge research in the industry.
+        Previously, I worked as an AI Engineer at the Shenzhen Future Network Intelligence Institute
+        and as a Research Scientist at Infused AI, collaborating with
+        <a href="https://scholar.google.com.hk/citations?user=qO7xbbgAAAAJ">Yatong Han</a>.
+        I also served as a technical consultant at <a href="https://www.aukilabs.com/">Auki-Labs</a>.
+        Earlier I was a Research Assistant at
+        <a href="https://mypage.cuhk.edu.cn/academics/lizhen/">Prof. Zhen Li</a>'s DeepBit Lab (CUHK-SZ),
+        the <a href="https://mhsung.github.io/">Geometry AI Lab</a> (KAIST, supervised by Prof. Minhyuk Sung),
+        the RAIL Lab (CUHK-SZ, supervised by <a href="https://sites.google.com/site/lamtinlun">Prof. Tin Lun Lam</a>),
+        and SRIBD (supervised by <a href="https://liliu-avril.github.io/">Prof. Liu Li</a>).
+      </p>
+      <p>
+        I completed my B.S. in Computer Engineering with <strong>First Class Honors</strong> from the
+        Chinese University of Hong Kong, Shenzhen in 2024, ranking <strong>6th out of 103</strong> in my major.
+      </p>
+    </div>
+  </div>
+
+  <!-- ===== EDUCATION ===== -->
+  <h3 class="section-title">Education</h3>
+
+  <div class="edu-row">
+    <div class="edu-date">2024 – 2026</div>
+    <div class="edu-details">
+      <h4>M.S. in Computer Science &mdash; University of Southern California</h4>
+      <p>Viterbi School of Engineering &nbsp;&middot;&nbsp; Los Angeles, CA</p>
+    </div>
+  </div>
+
+  <div class="edu-row">
+    <div class="edu-date">Spring 2023</div>
+    <div class="edu-details">
+      <h4>Exchange &mdash; Korea Advanced Institute of Science &amp; Technology (KAIST)</h4>
+      <p>Department of Electrical Engineering &nbsp;&middot;&nbsp; Daejeon, South Korea</p>
+    </div>
+  </div>
+
+  <div class="edu-row">
+    <div class="edu-date">2020 – 2024</div>
+    <div class="edu-details">
+      <h4>B.S. in Computer Engineering &mdash; Chinese University of Hong Kong (Shenzhen)</h4>
+      <p>School of Science and Engineering &nbsp;&middot;&nbsp; First Class Honors &nbsp;&middot;&nbsp; Rank 6 / 103</p>
+    </div>
+  </div>
+
+  <!-- ===== PUBLICATIONS ===== -->
+  <h3 class="section-title">Publications</h3>
+
+  <!-- NanoGS -->
+  <div class="pub-row">
+    <div class="pub-thumb">
+      <img src="images/scanning_project.png" alt="NanoGS teaser">
+    </div>
+    <div class="pub-content">
+      <div class="pub-title">NanoGS: Training-Free Gaussian Splat Simplification</div>
+      <div class="pub-authors">
+        <strong>Butian Xiong</strong>*, Rong Liu*, Tiantian Zhou, Meida Chen, Zhiwen Fan, Andrew Feng
+        <span style="font-size:0.8rem; color:#888;">(*equal contribution)</span>
+      </div>
+      <div class="pub-venue">
+        <span class="venue-tag preprint">arXiv &nbsp;Mar 2026</span>
+      </div>
+      <div class="pub-desc">
+        A training-free method for compressing 3D Gaussian Splat representations by formulating
+        simplification as local pairwise merging over a sparse spatial graph. Uses mass-preserved
+        moment matching to merge Gaussian pairs while preserving standard 3DGS parameterization —
+        runs on CPU with no post-training optimization or calibrated images required.
+      </div>
+      <div class="pub-links">
+        <a href="https://arxiv.org/abs/2603.16103"><i class="ai ai-arxiv"></i> arXiv</a>
+        <a href="https://github.com/saliteta/NanoGS"><i class="fab fa-github"></i> Code</a>
+        <a href="https://saliteta.github.io/NanoGS/"><i class="fas fa-globe"></i> Project</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Splat Feature Solver -->
+  <div class="pub-row">
+    <div class="pub-thumb">
+      <img src="images/scanning_project.png" alt="Splat Feature Solver teaser">
+    </div>
+    <div class="pub-content">
+      <div class="pub-title">Splat Feature Solver</div>
+      <div class="pub-authors">
+        <strong>Butian Xiong</strong>, Rong Liu, Kenneth Xu, Meida Chen, Andrew Feng
+      </div>
+      <div class="pub-venue">
+        <span class="venue-tag conf">ICLR 2026</span>
+      </div>
+      <div class="pub-desc">
+        We cast feature lifting on splat-based 3D representations as a sparse linear inverse problem
+        with a closed-form solution, plus two regularizers (Tikhonov Guidance, Post-Lifting Aggregation)
+        to stabilize and denoise multi-view features. Delivers state-of-the-art open-vocabulary 3D
+        segmentation in minutes.
+      </div>
+      <div class="pub-links">
+        <a href="https://openreview.net/forum?id=AepuXqQM4X"><i class="fas fa-award"></i> OpenReview</a>
+        <a href="https://arxiv.org/abs/2508.12216"><i class="ai ai-arxiv"></i> arXiv</a>
+        <a href="https://github.com/saliteta/splat-distiller"><i class="fab fa-github"></i> Code</a>
+        <a href="https://splat-distiller.pages.dev/"><i class="fas fa-globe"></i> Project</a>
+        <a href="https://youtu.be/CH-G5hbvArM"><i class="fab fa-youtube"></i> Video</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Class Relevance -->
+  <div class="pub-row">
+    <div class="pub-thumb">
+      <div class="thumb-placeholder">OOD Detection</div>
+    </div>
+    <div class="pub-content">
+      <div class="pub-title">Class Relevance Learning for Out-of-Distribution Detection</div>
+      <div class="pub-authors">
+        Liguang Zhou, <strong>Butian Xiong</strong>, et al.
+      </div>
+      <div class="pub-venue">
+        <span class="venue-tag conf">ICASSP 2025</span>
+      </div>
+      <div class="pub-desc">
+        A class relevance learning (CRL) framework that harnesses inter-class relationships within
+        the OOD pipeline, significantly outperforming prior max-logit methods on generic image
+        classification (Near OOD and Far OOD) benchmarks.
+      </div>
+      <div class="pub-links">
+        <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10888174"><i class="fas fa-file-pdf"></i> Paper</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- SA-GS -->
+  <div class="pub-row">
+    <div class="pub-thumb">
+      <img src="images/scanning_project.png" alt="SA-GS teaser">
+    </div>
+    <div class="pub-content">
+      <div class="pub-title">SA-GS: Semantic-Aware Gaussian Splatting for Large Scene Reconstruction with Geometry Constraint</div>
+      <div class="pub-authors">
+        <strong>Butian Xiong</strong>, et al.
+      </div>
+      <div class="pub-venue">
+        <span class="venue-tag preprint">arXiv &nbsp;May 2024</span>
+      </div>
+      <div class="pub-desc">
+        SA-GS leverages SAM and DINO to generate semantic masks and introduces a geometric complexity
+        measurement function as soft regularization, guiding each Gaussian Splat within specific semantic
+        regions for fine-grained 3D geometry reconstruction.
+      </div>
+      <div class="pub-links">
+        <a href="https://arxiv.org/pdf/2405.16923"><i class="ai ai-arxiv"></i> arXiv</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- GauU-Scene V2 -->
+  <div class="pub-row">
+    <div class="pub-thumb">
+      <img src="images/scanning_project.png" alt="GauU-Scene V2 teaser">
+    </div>
+    <div class="pub-content">
+      <div class="pub-title">GauU-Scene V2: Assessing the Reliability of Image-Based Metrics with Expansive LiDAR Image Dataset Using 3DGS and NeRF</div>
+      <div class="pub-authors">
+        <strong>Butian Xiong</strong>, Nanjun Zheng, Zhen Li
+      </div>
+      <div class="pub-venue">
+        <span class="venue-tag preprint">arXiv &nbsp;Apr 2024</span>
+      </div>
+      <div class="pub-desc">
+        Extends U-Scene to 6.5+ km&sup2; with the first LiDAR–image alignment method for a drone-based
+        dataset. Reveals contradictions between image-based metrics (SSIM, LPIPS, PSNR) and geometric
+        metrics (Chamfer distance) in 3DGS and NeRF evaluation.
+      </div>
+      <div class="pub-links">
+        <a href="https://arxiv.org/abs/2404.04880"><i class="ai ai-arxiv"></i> arXiv</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- GauU-Scene V1 -->
+  <div class="pub-row">
+    <div class="pub-thumb">
+      <img src="images/scanning_project.png" alt="GauU-Scene teaser">
+    </div>
+    <div class="pub-content">
+      <div class="pub-title">GauU-Scene: A Scene Reconstruction Benchmark on Large Scale 3D Reconstruction Dataset Using Gaussian Splatting</div>
+      <div class="pub-authors">
+        <strong>Butian Xiong</strong>, et al.
+      </div>
+      <div class="pub-venue">
+        <span class="venue-tag preprint">arXiv &nbsp;Jan 2024</span>
+      </div>
+      <div class="pub-desc">
+        Introduces U-Scene, a 1.5+ km&sup2; outdoor benchmark coupling RGB imagery with LiDAR ground truth
+        collected via DJI Matrix 300 drone with Zenmuse L1, covering both urban and academic environments.
+      </div>
+      <div class="pub-links">
+        <a href="https://arxiv.org/abs/2401.14032"><i class="ai ai-arxiv"></i> arXiv</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- MoCapDT -->
+  <div class="pub-row">
+    <div class="pub-thumb">
+      <div class="thumb-placeholder">Motion Capture</div>
+    </div>
+    <div class="pub-content">
+      <div class="pub-title">MoCapDT: Temporal Guided Motion Capture Solving with Diffusion Transfer</div>
+      <div class="pub-authors">
+        <strong>Butian Xiong</strong>
+      </div>
+      <div class="pub-venue">
+        <span class="venue-tag journal">Journal of Electronics and Information Science &nbsp;2023</span>
+      </div>
+      <div class="pub-desc">
+        A modified diffusion model architecture for reconstructing joint locations from noisy 4D marker
+        data, using temporal guidance in latent space. Outperforms autoencoder-based baselines on CMU
+        Synthesized and real-world NC-SOFT datasets.
+      </div>
+      <div class="pub-links">
+        <a href="https://www.clausiuspress.com/assets/default/article/2023/09/04/article_1693817848.pdf"><i class="fas fa-file-pdf"></i> Paper</a>
+        <a href="files/MoCapDT.pdf"><i class="fas fa-download"></i> Local PDF</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== EXPERIENCE ===== -->
+  <h3 class="section-title">Experience</h3>
+
+  <div class="exp-row">
+    <h4>Research Intern &nbsp;&middot;&nbsp; <a href="https://www.futurewei.com/">Futurewei Technologies</a></h4>
+    <div class="exp-meta">2025 – Present &nbsp;&middot;&nbsp; (Huawei US R&amp;D)</div>
+    <div class="exp-desc">Industry research internship at Futurewei, Huawei's US research and development arm.</div>
+  </div>
+
+  <div class="exp-row">
+    <h4>Research Assistant &nbsp;&middot;&nbsp; <a href="https://ict.usc.edu/">USC Institute for Creative Technologies</a></h4>
+    <div class="exp-meta">Spring 2024 – Present &nbsp;&middot;&nbsp; Los Angeles, CA &nbsp;&middot;&nbsp; Supervisor: <a href="https://ict.usc.edu/about-us/leadership/research-leadership/andrew-feng/">Andrew Feng</a></div>
+    <div class="exp-desc">3D scene understanding, indoor navigation, multiview-consistent semantic segmentation, embodiment dataset collection.</div>
+  </div>
+
+  <div class="exp-row">
+    <h4>AI Engineer &nbsp;&middot;&nbsp; Shenzhen Future Network Intelligence Institute</h4>
+    <div class="exp-meta">2024 – Present &nbsp;&middot;&nbsp; Shenzhen, China</div>
+    <div class="exp-desc">Large-scale indoor scene reconstruction; semantic embedding within Gaussian Splatting representations.</div>
+  </div>
+
+  <div class="exp-row">
+    <h4>Research Scientist &nbsp;&middot;&nbsp; Infused AI</h4>
+    <div class="exp-meta">2024 &nbsp;&middot;&nbsp; Remote &nbsp;&middot;&nbsp; Collaboration with <a href="https://scholar.google.com.hk/citations?user=qO7xbbgAAAAJ">Yatong Han</a></div>
+    <div class="exp-desc">Co-led the 3D scene understanding research team with <a href="https://scholar.google.com/citations?user=piMObnAAAAAJ&hl=en">Dr. Xiao Yu</a>.</div>
+  </div>
+
+  <div class="exp-row">
+    <h4>Research Assistant &nbsp;&middot;&nbsp; CUHK-SZ DeepBit Lab</h4>
+    <div class="exp-meta">Fall 2023 – Spring 2024 &nbsp;&middot;&nbsp; Supervisor: <a href="https://mypage.cuhk.edu.cn/academics/lizhen/">Prof. Zhen Li</a></div>
+    <div class="exp-desc">3D LiDAR scanning, Gaussian Splatting, large-scale scene benchmark construction (GauU-Scene).</div>
+  </div>
+
+  <div class="exp-row">
+    <h4>Research Assistant &nbsp;&middot;&nbsp; KAIST Geometry AI Lab</h4>
+    <div class="exp-meta">Summer 2023 &nbsp;&middot;&nbsp; Daejeon, South Korea &nbsp;&middot;&nbsp; Supervisor: <a href="https://mhsung.github.io/">Prof. Minhyuk Sung</a></div>
+    <div class="exp-desc">3D point cloud denoising using diffusion models and transformer architectures.</div>
+  </div>
+
+  <div class="exp-row">
+    <h4>Research Assistant &nbsp;&middot;&nbsp; CUHK-SZ RAIL Lab</h4>
+    <div class="exp-meta">Fall 2022 &nbsp;&middot;&nbsp; Supervisors: <a href="https://sites.google.com/site/lamtinlun">Prof. Tin Lun Lam</a> &amp; <a href="https://sites.google.com/view/zhouliguang/home">Dr. Liguang Zhou</a></div>
+    <div class="exp-desc">Out-of-distribution detection, scene understanding, entropy-based algorithms for safe robotic deployment.</div>
+  </div>
+
+  <div class="exp-row">
+    <h4>Research Assistant &nbsp;&middot;&nbsp; Shenzhen Research Institute of Big Data (SRIBD)</h4>
+    <div class="exp-meta">Summer 2022 &nbsp;&middot;&nbsp; Supervisor: <a href="https://liliu-avril.github.io/">Prof. Liu Li</a></div>
+    <div class="exp-desc">3D digital face and human generation with deep learning.</div>
+  </div>
+
+  <div class="exp-row">
+    <h4>Technical Consultant &nbsp;&middot;&nbsp; <a href="https://www.aukilabs.com/">Auki-Labs</a></h4>
+    <div class="exp-meta">2023</div>
+    <div class="exp-desc">Spatial computing and AR/VR consulting.</div>
+  </div>
+
+  <!-- ===== AWARDS ===== -->
+  <h3 class="section-title">Awards</h3>
+  <ul class="clean-list">
+    <li>First Class Honor Graduation, B.S. Computer Engineering, CUHK-SZ (2024)</li>
+    <li>Undergraduate Research Award, CUHK-SZ (2023, 2024)</li>
+    <li>Dean's List, School of Science and Engineering, CUHK-SZ (2020–2021, 2021–2022, 2022–2023, 2023–2024)</li>
+    <li>Academic Performance Award, CUHK-SZ (2021–2022)</li>
+  </ul>
+
+  <!-- ===== SERVICE ===== -->
+  <h3 class="section-title">Service</h3>
+  <ul class="clean-list">
+    <li><strong>Reviewer</strong> — IEEE TCSVT (2024)</li>
+    <li><strong>Reviewer</strong> — ICASSP (2024, 2025)</li>
+    <li><strong>Teaching Assistant</strong> — Introduction to Artificial Intelligence, CUHK-SZ (Fall 2024 – Present)</li>
+    <li><strong>Teaching Assistant</strong> — Multimedia System, CUHK-SZ (Fall 2023)</li>
+    <li><strong>Teaching Assistant</strong> — Database System, CUHK-SZ (Fall 2022, 100+ students)</li>
+  </ul>
+
+  <!-- ===== RESEARCH GROUP ===== -->
+  <h3 class="section-title">Research Group</h3>
+  <p>
+    I co-lead a 3D scene understanding research team at Infused AI and DeepBit Lab with
+    <a href="https://scholar.google.com/citations?user=piMObnAAAAAJ&hl=en">Dr. Xiao Yu</a>.
+    If you are interested in joining our research, feel free to reach out via email.
+  </p>
+  <p><em>Current research assistants:</em> Jiayue Dai, Yunya Wang, Yuetong Chen, Yihan Fang</p>
+
+  <!-- ===== HOBBIES ===== -->
+  <h3 class="section-title">Hobbies</h3>
+  <ul class="clean-list">
+    <li><strong>Violin</strong> — 10+ years; former member of the CUHK-Shenzhen Orchestra</li>
+    <li><strong>Climbing</strong> — bouldering and sport climbing</li>
+    <li><strong>Table Tennis</strong> — competitive recreational player</li>
+    <li><strong>Pickleball</strong> — enthusiast</li>
+    <li><strong>Swimming</strong> — swam across the Yangtze River several times</li>
+    <li><strong>Kendo</strong> — former member of KAIST Kendo Club</li>
+  </ul>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <p>
+      &copy; 2025 Butian Xiong &nbsp;&middot;&nbsp;
+      Design inspired by <a href="https://rongliu-leo.github.io/">Rong Liu</a>'s website &nbsp;&middot;&nbsp;
+      <a href="mailto:xiongbutian768@gmail.com">xiongbutian768@gmail.com</a>
+    </p>
+  </footer>
+
+</div><!-- /container -->
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script>
+  // Dark mode
+  function applyDark(matches) {
+    document.body.classList.toggle('dark', matches);
+  }
+  var mq = window.matchMedia('(prefers-color-scheme: dark)');
+  applyDark(mq.matches);
+  mq.addEventListener('change', function(e) { applyDark(e.matches); });
+</script>
+</body>
+</html>
