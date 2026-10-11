@@ -238,6 +238,31 @@
 
     ul.clean-list li { margin-bottom: 0.3rem; }
 
+    /* ===== My Life ===== */
+    .life-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0.9rem;
+    }
+
+    .life-item { margin: 0; }
+
+    .life-item img {
+      width: 100%;
+      aspect-ratio: 4 / 3;
+      object-fit: cover;
+      border-radius: 5px;
+      border: 1px solid #e8e8e8;
+      display: block;
+    }
+
+    .life-item figcaption {
+      font-size: 0.82rem;
+      color: #666;
+      text-align: center;
+      margin-top: 0.3rem;
+    }
+
     /* ===== Footer ===== */
     footer {
       text-align: center;
@@ -283,6 +308,8 @@
     body.dark .exp-desc { color: #99a0b0; }
     body.dark .edu-date { color: #888; }
     body.dark .edu-details p { color: #99a0b0; }
+    body.dark .life-item img { border-color: #3a3d52; }
+    body.dark .life-item figcaption { color: #99a0b0; }
     body.dark footer { border-color: #2e3148; color: #555; }
 
     /* ===== Responsive ===== */
@@ -293,6 +320,7 @@
       .profile-photo { width: 160px; height: 160px; }
       .edu-row { flex-direction: column; gap: 0.2rem; }
       .edu-date { flex: none; }
+      .life-grid { grid-template-columns: repeat(2, 1fr); }
     }
 
     /* ===== Print ===== */
@@ -665,6 +693,39 @@
     <li><strong>Swimming</strong> — swam across the Yangtze River several times</li>
     <li><strong>Kendo</strong> — former member of KAIST Kendo Club</li>
   </ul>
+
+  <!-- ===== MY LIFE ===== -->
+  <h3 class="section-title">My Life</h3>
+  <div class="life-grid">
+    <figure class="life-item">
+      <img src="images/mylife/aircraftLover.jpg" alt="Aircraft lover" loading="lazy">
+      <figcaption>Aircraft lover</figcaption>
+    </figure>
+    <figure class="life-item">
+      <img src="images/mylife/jetLover.jpg" alt="Jet lover" loading="lazy">
+      <figcaption>Jet lover</figcaption>
+    </figure>
+    <figure class="life-item">
+      <img src="images/mylife/mountainClimber.jpg" alt="Mountain climber" loading="lazy">
+      <figcaption>Mountain climber</figcaption>
+    </figure>
+    <figure class="life-item">
+      <img src="images/mylife/dogLover.jpg" alt="Dog lover" loading="lazy">
+      <figcaption>Dog lover</figcaption>
+    </figure>
+    <figure class="life-item">
+      <img src="images/mylife/garderner.jpg" alt="Gardener" loading="lazy">
+      <figcaption>Gardener</figcaption>
+    </figure>
+    <figure class="life-item">
+      <img src="images/mylife/playinforest.jpg" alt="Playing in the forest" loading="lazy">
+      <figcaption>Playing in the forest</figcaption>
+    </figure>
+    <figure class="life-item">
+      <img src="images/mylife/meandmyViolinProfessor.jpg" alt="With my violin professor" loading="lazy">
+      <figcaption>With my violin professor</figcaption>
+    </figure>
+  </div>
 
   <!-- ===== FOOTER ===== -->
   <footer>
