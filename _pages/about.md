@@ -15,6 +15,8 @@ My name is Butian Xiong, currently as MSCS in USC. I am also a research intern i
 
 Service
 ======
+- Served as reviewer of ICLR 2027
+- Served as reviewer of AAAI 2027
 - Served as reviewer in TCSVT 2024
 - Served as reviewer of ICASSP 2024, and 2025
 - Served as Teaching Assistant, in Database System, Multimedia System, Introduction to Artificial Intellegience
